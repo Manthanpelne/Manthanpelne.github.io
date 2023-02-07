@@ -1,0 +1,333 @@
+body{
+    background-color: beige;
+  }
+
+  #nav-menu{
+     max-width: 100%;
+     height:80px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: auto;
+     position: sticky;
+     background-color: rgb(237, 237, 209);
+     top: 0px;
+  }
+  #nav-menu>div{
+     width: 50%;
+  }
+ 
+  #nav-menu p{
+     color: rgb(174, 172, 172);
+    font-family: sans-serif;
+     font-size: 20px;
+     font-weight: bolder;
+     padding-left: 20px;
+  }
+  .button{
+   display: flex;
+   justify-content: space-evenly;
+   height: 40px;
+  }
+  .button button{
+   width: 90px;
+   border: none;
+   background-color:rgb(219, 219, 196);
+   font-size: 14px;
+   color:rgb(95, 95, 86);
+   cursor: pointer;
+   border-radius: 10px;
+   position: relative;
+  }
+
+  .button button::after{
+   content: '';
+   width: 0;
+   height: 4px;
+   background: rgb(137, 137, 108);
+   position:absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+  }
+
+  .button button:hover::after{
+   width: 100%;
+  }
+
+  #home{
+   display: flex;
+   margin-top:70px;
+   min-width:100%;
+   height: 500px;
+   justify-content: space-evenly;
+
+  }
+  #home p{
+   color:  rgb(160, 160, 141);
+   padding-top:10px;
+     font-size:20px;
+  }
+  #home>div span{
+   font-size: 80px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:rgb(144, 144, 144);
+   font-weight: bolder;
+  }
+  #home>div img{
+   width: 100%;
+   border-radius: 100%;
+  }
+  #home>div button{
+   border: none;
+   width: 170px;
+   height:50px;
+   background-color: rgb(77, 76, 76);
+   color: beige;
+   margin-top: 20px;
+   font-size: 18px;
+  }
+
+  #about{
+   border: 1px solid rgb(124, 123, 123);
+   height:450px;
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+  }
+  #about>div{
+   width: 50%;
+  }
+  #about img{
+   width: 70%;
+   height:83%;
+   border-radius: 100%;
+   padding-left: 10px;
+   
+  }
+  .about h2{
+   color: rgb(150, 150, 150);
+   font-family: sans-serif;
+   font-weight: lighter;
+  }
+  #about span{
+   font-size: 49px;
+   color: rgb(133, 131, 131);
+  }
+  #about p{
+   font-size: 18px;
+   font-family: sans-serif;
+   font-weight:lighter;
+   color: rgb(151, 151, 151);
+  }
+
+  #about h3{
+   font-size: 20px;
+   color: gray;
+   font-weight: lighter;
+  }
+
+  #contact{
+   display: flex;
+   padding-top: 40px;
+   font-size: 35px;
+  justify-content: space-around;
+       margin: auto;
+       align-items: center;
+  }
+  #contact ion-icon{
+  color: gray;
+  cursor: pointer;
+  }
+  #about-me{
+   padding-left: 42%;
+   font-family: sans-serif;
+   color: rgb(148, 145, 145);
+   font-size: 45px;
+   font-weight: lighter;
+  }
+
+  #skills{
+   width:530px;
+   height: 280px;
+   background-color: rgb(220, 220, 183);
+   margin: auto;
+   border-radius: 17px;
+  }
+  #skill-head{
+   padding-top: 70px;
+   padding-left: 41%;
+   font-family: sans-serif;
+   color: rgb(148, 145, 145);
+   font-size: 45px;
+   font-weight: lighter;
+  }
+
+  .skills-card-img{
+   padding-top: 20px;
+   width:64%;
+   border-radius: 10px;
+  }
+
+  .carrousel{
+   display:grid;
+   grid-auto-flow:column;
+   scroll-behavior: auto;
+   gap: 12px;
+   overflow-y: auto;
+   overscroll-behavior-x:contain;
+   scroll-snap-type: x mandatory;
+   scrollbar-width: none;
+  }
+
+  .carrousel::-webkit-scrollbar{
+   display: none;
+  }
+ 
+  .skills-card{
+   scroll-snap-align: start;
+   border-radius: 30px;
+   min-height: 200px;
+   min-width: 300px;
+   align-items: center;
+   justify-content: center;
+  }
+
+  #skills p{
+   font-size: 20px;
+   font-family: sans-serif;
+   padding-left:65px;
+   color: #7d7b7b;
+  }
+  #skills p:hover{
+   color: #4a4949;
+  }
+
+  .scrolling{
+   font-style: italic;
+   font-weight: lighter;
+   font-family: sans-serif;
+   color: #7d7b7b;
+   font-size: 14px;
+   padding-left: 160px;
+  }
+  
+  #main-skills{
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   height: 370px;
+   margin: auto;
+  }
+
+  #main-skills>div{
+  width: 39%;
+  margin: auto;
+  }
+
+  .desc{
+   height:330px;
+   font-size: 20px;
+   font-family: sans-serif;
+   font-weight: lighter;
+   color: #787777;
+}
+.desc p{
+   padding-top: 20px;
+}
+
+.desc ion-icon{
+   font-size: 25px;
+  }
+
+  #project-title{
+   padding-left: 42%;
+   font-family: sans-serif;
+   color: rgb(148, 145, 145);
+   font-size: 45px;
+   font-weight: lighter;
+  }
+
+  .project-card{
+   width: 450px;
+   border: 1px solid red;
+   height:450px;
+   transform: translate(10%,0%);
+   border-radius: 15px;
+   overflow: hidden;
+  }
+  .project-card>div img{
+   width: 100%;
+   padding-top: 10px;
+   position: absolute;
+   height: 300px;
+top:0;
+left: 0;
+transition: 0.5s;
+z-index: 2;
+  }
+
+.project-card>div img:hover{
+transform: translateY(-100px);
+opacity: 0.5;
+}
+
+.details{
+position: absolute;
+bottom: 0;
+left: 0;
+background-color: rgb(47, 47, 47);
+color: white;
+width: 100%;
+box-sizing: border-box;
+padding: 10px;
+}
+.details{
+text-align: center;
+font-size: 14px;
+}
+
+.tech-stack{
+position: absolute;
+top:60%;
+left: 50%;
+transform: translate(-50%,-230%);
+z-index: 3;
+display: flex;
+margin: 0;
+padding: 0;
+
+}
+
+.tech-stack li{
+list-style: none;
+padding-left: 10px;
+
+}
+.tech-stack ion-icon{
+padding-left: 15px;
+padding-top: 14px;
+}
+
+.tech-stack li a{
+position: relative;
+display: block;
+width:70px;
+height: 67px;
+color: #5d616c;
+font-size: 40px;
+border-radius: 80%;
+transition: 0.5s;
+border: 1px solid gray;
+opacity: 1;
+
+}
+
+
+.tech-stack li a:hover{
+transform: rotateY(360deg);
+}
+
