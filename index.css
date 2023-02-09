@@ -10,12 +10,14 @@ body{
      justify-content: space-between;
      margin: auto;
      position: sticky;
+     z-index: 2;
      background-color: rgb(237, 237, 209);
      top: 0px;
   }
   #nav-menu>div{
      width: 50%;
   }
+
  
   #nav-menu p{
      color: rgb(174, 172, 172);
@@ -29,6 +31,8 @@ body{
    justify-content: space-evenly;
    height: 40px;
   }
+
+
   .button button{
    width: 90px;
    border: none;
@@ -79,15 +83,19 @@ body{
    border-radius: 100%;
   }
   #home>div button{
-   border: none;
-   width: 170px;
-   height:50px;
-   background-color: rgb(77, 76, 76);
-   color: beige;
-   margin-top: 20px;
-   font-size: 18px;
+    width: 150px;
+    height:40px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: gray;
+    background-color: beige;
+    border: 1px solid gray;
   }
 
+  #home>div button:hover{
+    background-color: rgb(198, 198, 170);
+    cursor: pointer;
+  }
   #about{
    border: 1px solid rgb(124, 123, 123);
    height:450px;
@@ -98,6 +106,8 @@ body{
    align-items: center;
    padding: 20px;
   }
+
+
   #about>div{
    width: 50%;
   }
@@ -108,226 +118,860 @@ body{
    padding-left: 10px;
    
   }
-  .about h2{
-   color: rgb(150, 150, 150);
-   font-family: sans-serif;
-   font-weight: lighter;
-  }
-  #about span{
-   font-size: 49px;
-   color: rgb(133, 131, 131);
-  }
-  #about p{
-   font-size: 18px;
-   font-family: sans-serif;
-   font-weight:lighter;
-   color: rgb(151, 151, 151);
-  }
-
-  #about h3{
-   font-size: 20px;
-   color: gray;
-   font-weight: lighter;
-  }
-
-  #contact{
-   display: flex;
-   padding-top: 40px;
-   font-size: 35px;
-  justify-content: space-around;
-       margin: auto;
-       align-items: center;
-  }
-  #contact ion-icon{
-  color: gray;
-  cursor: pointer;
-  }
   #about-me{
-   padding-left: 42%;
-   font-family: sans-serif;
-   color: rgb(148, 145, 145);
-   font-size: 45px;
-   font-weight: lighter;
-  }
+    padding-left: 42%;
+    font-family: sans-serif;
+    color: rgb(148, 145, 145);
+    font-size: 45px;
+    font-weight: lighter;
+   }
 
-  #skills{
-   width:530px;
-   height: 280px;
-   background-color: rgb(220, 220, 183);
-   margin: auto;
-   border-radius: 17px;
-  }
-  #skill-head{
-   padding-top: 70px;
-   padding-left: 41%;
-   font-family: sans-serif;
-   color: rgb(148, 145, 145);
-   font-size: 45px;
-   font-weight: lighter;
-  }
-
-  .skills-card-img{
-   padding-top: 20px;
-   width:64%;
-   border-radius: 10px;
-  }
-
-  .carrousel{
-   display:grid;
-   grid-auto-flow:column;
-   scroll-behavior: auto;
-   gap: 12px;
-   overflow-y: auto;
-   overscroll-behavior-x:contain;
-   scroll-snap-type: x mandatory;
-   scrollbar-width: none;
-  }
+   .about h2{
+    color: rgb(150, 150, 150);
+    font-family: sans-serif;
+    font-weight: lighter;
+   }
+   #about span{
+    font-size: 49px;
+    color: rgb(133, 131, 131);
+   }
+   #about p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight:lighter;
+    color: rgb(151, 151, 151);
+   }
+ 
+   #about h3{
+    font-size: 20px;
+    color: gray;
+    font-weight: lighter;
+   }
+ 
+   #contact{
+    display: flex;
+    padding-top: 40px;
+    font-size: 35px;
+   justify-content: space-around;
+        margin: auto;
+        align-items: center;
+   }
+   #contact ion-icon{
+   color: gray;
+   cursor: pointer;
+   }
+ 
+   #contact ion-icon:hover{
+    color: rgb(70, 69, 69);
+    cursor: pointer;
+    }
+ 
+   #skills{
+    width:530px;
+    height: 280px;
+    background-color: rgb(220, 220, 183);
+    margin: auto;
+    border-radius: 17px;
+   }
+   #skill-head{
+    padding-top: 70px;
+    padding-left: 45%;
+    font-family: sans-serif;
+    color: rgb(148, 145, 145);
+    font-size: 45px;
+    font-weight: lighter;
+   }
+ 
+   .skills-card-img{
+    padding-top: 20px;
+    width:64%;
+    border-radius: 10px;
+   }
+ 
+   .carrousel{
+    display:grid;
+    grid-auto-flow:column;
+    scroll-behavior: auto;
+    gap: 12px;
+    overflow-y: auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+   }
+   
 
   .carrousel::-webkit-scrollbar{
-   display: none;
-  }
- 
-  .skills-card{
-   scroll-snap-align: start;
-   border-radius: 30px;
-   min-height: 200px;
-   min-width: 300px;
-   align-items: center;
-   justify-content: center;
-  }
-
-  #skills p{
-   font-size: 20px;
-   font-family: sans-serif;
-   padding-left:65px;
-   color: #7d7b7b;
-  }
-  #skills p:hover{
-   color: #4a4949;
-  }
-
-  .scrolling{
-   font-style: italic;
-   font-weight: lighter;
-   font-family: sans-serif;
-   color: #7d7b7b;
-   font-size: 14px;
-   padding-left: 160px;
-  }
+    display: none;
+   }
   
-  #main-skills{
-   width: 80%;
-   display: flex;
-   justify-content: space-between;
-   height: 370px;
+   .skills-card{
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+   }
+ 
+   #skills p{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left:65px;
+    color: #7d7b7b;
+   }
+   #skills p:hover{
+    color: #4a4949;
+   }
+ 
+   .scrolling{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: sans-serif;
+    color: #7d7b7b;
+    font-size: 14px;
+    padding-left: 160px;
+   }
+   
+   #main-skills{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    margin: auto;
+   }
+ 
+   #main-skills>div{
+   width: 39%;
    margin: auto;
+   }
+ 
+   .desc{
+    height:330px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #787777;
+ }
+ .desc p{
+    padding-top: 20px;
+ }
+ 
+ .desc ion-icon{
+    font-size: 25px;
+   }
+   #projects{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin: auto;
+     margin-top: 70px;
+     width: 80%;
+     gap: 50px;
+   }
+ 
+   #project-title{
+       padding-top: 70px;
+    padding-left: 36%;
+    font-family: sans-serif;
+    color: rgb(148, 145, 145);
+    font-size: 45px;
+    font-weight: lighter;
+   
+   }
+ 
+   .project-card{
+    width: 450px;
+    height:450px;
+    transform: translate(10%,0%);
+    border-radius: 15px;
+    overflow: hidden;
+   }
+ 
+   .project-card>div img{
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    height: 250px;
+    border-radius: 20px;
+ left: 0;
+ transition: 0.5s;
+ z-index: 2;
+   }
+ 
+  
+ 
+ .project-card>div img:hover{
+ transform: translateY(-120px);
+ opacity: 0.10;
+ }
+ 
+ .details{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ background-color: rgb(157, 157, 133);
+ color: rgb(235, 235, 230);
+ width: 100%;
+ box-sizing: border-box;
+ padding: 10px;
+ }
+ .details{
+ text-align: center;
+ font-size: 14px;
+ }
+ 
+ .tech-stack{
+ position: absolute;
+ top:60%;
+ left: 50%;
+ transform: translate(-50%,-210%);
+ 
+ display: flex;
+ margin: 0;
+ padding: 0;
+ 
+ }
+ 
+ .tech-stack li{
+ list-style: none;
+ padding-left: 10px;
+ 
+ }
+ 
+ 
+ .tech-stack li a{
+ position: relative;
+ display: block;
+ width:70px;
+ height: 67px;
+ color: #494a4d;
+ font-size: 40px;
+ border-radius: 80%;
+ transition: 0.5s;
+ opacity: 10;
+ 
+ }
+ 
+ .project-title h2{
+     font-family: "railway",sans-serif;
+     font-weight: lighter;
+     color:white;
+ }
+ 
+ 
+ .tech-stack li a:hover{
+ transform: rotateY(360deg);
+ }
+ 
+ #link{
+     display: flex;
+     justify-content: space-around;
+ }
+ #link>div ion-icon{
+     font-size: 30px;
+     border-radius: 50%;
+     background-color: rgb(135, 133, 133);
+ }
+ #link a:nth-child(1){
+     color:white;
+ }
+ 
+ .project-tech-stack{
+     display: flex;
+      gap:30px;
+      font-family: sans-serif;
+      color: rgb(223, 223, 215);
+ }
+ .project-deployed-link button{
+     border: none;
+     margin-top:2px;
+     color: #6d6e70;
+     border-radius: 5px;
+     font-size: 12px;
+     cursor: pointer;
+     width: 120px;
+     height: 23px;
+     background-color: rgb(215, 215, 203);
+ }
+ .project-tech-stack>div p{
+     font-size: 15px;
+ 
+ }
+ 
+ .project-deployed-link button:hover{
+     background-color:rgb(99, 99, 81);
+     color: white;
+     border: 1px solid gray;
+ }
+ 
+ #footer{
+     width: 60%;
+     height: 300px;
+ }
+ 
+ #getintouch{
+     padding-top: 130px;
+     padding-left: 39%;
+     font-family: sans-serif;
+     color: rgb(148, 145, 145);
+     font-size: 55px;
+     font-weight: lighter;
+ }
+ 
+ #footer{
+ text-align:center;
+ min-width: 40%;
+ font-size: 20px;
+ font-family: "railway",sans-serif;
+ display: flex;
+ height: 170px;
+ margin: auto;
+ text-align: center;
+ justify-content: space-around;
+ }
+ 
+ #footer p{
+     color:rgb(139, 139, 140)
+ }
+ 
+ #footer>div ion-icon{
+     font-size: 40px;
+     padding-top: 30px;
+     color:gray
+ }
+ 
+ #footer a{
+     color: gray;
+     text-decoration: none;
+     font-size: 12px;
+ }
+
+ 
+ #footer>div ion-icon:hover{
+  font-size: 40px;
+  padding-top: 30px;
+  color:rgb(86, 85, 85)
+}
+ 
+ #footer>div button{
+     width: 150px;
+     height:40px;
+     margin-top: 30px;
+     font-size: 16px;
+     color: gray;
+     background-color: beige;
+     border: 1px solid gray;
+ }
+ 
+ #footer>div button:hover{
+  width: 150px;
+  height:40px;
+  margin-top: 30px;
+  font-size: 16px;
+  color: rgb(227, 222, 222);
+  background-color: rgb(81, 81, 74);
+  border: 1px solid gray;
+}
+
+
+  @media all and (min-width:675px) and (max-width:900px){
+    #nav-menu{
+       max-width: 100%;
+       height:120px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin: auto;
+       flex-direction: column;
+       position: sticky;
+       z-index: 2;
+       background-color: rgb(237, 237, 209);
+       top: 0px;
+    }
+
+    #footer>div ion-icon:hover{
+      font-size: 40px;
+      padding-top: 30px;
+      color:rgb(86, 85, 85)
   }
 
-  #main-skills>div{
-  width: 39%;
+    
+    #getintouch{
+      padding-top: 130px;
+      padding-left: 27%;
+      font-family: sans-serif;
+      color: rgb(148, 145, 145);
+      font-size: 55px;
+      font-weight: lighter;
+    }
+    #footer{
+      padding-top: 110px;
+      width: 60%;
+      height: 400px;
+  }
+
+  .button{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+   }
+ 
+  #footer>div button:hover{
+    width: 150px;
+    height:40px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgb(227, 222, 222);
+    background-color: rgb(81, 81, 74);
+    border: 1px solid gray;
+}
+
+    
+   #project-title{
+    padding-top: 40px;
+ padding-left: 20%;
+ font-family: sans-serif;
+ color: rgb(148, 145, 145);
+ font-size: 45px;
+ font-weight: lighter;
+
+}
+#footer{
+  text-align:center;
+  min-width: 40%;
+  font-size: 20px;
+  font-family: "railway",sans-serif;
+  display: flex;
+  height: 170px;
+  flex-direction: column;
   margin: auto;
+  text-align: center;
+  justify-content: space-around;
   }
 
-  .desc{
-   height:330px;
-   font-size: 20px;
-   font-family: sans-serif;
-   font-weight: lighter;
-   color: #787777;
-}
-.desc p{
-   padding-top: 20px;
+    #projects{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      margin: auto;
+      margin-top: 40px;
+      width: 80%;
+      gap: 50px;
+    }
+
+    #nav-menu>div{
+       width: 100%;
+    }
+    #nav-menu p{
+       color: rgb(174, 172, 172);
+      font-family: sans-serif;
+       font-size: 20px;
+       font-weight: bolder;
+       padding-left: 300px;
+    }
+
+    #home{
+       display: flex;
+       margin-top:70px;
+       min-width:100%;
+       height: 400px;
+       justify-content: space-evenly;
+
+      }
+    #home>div span{
+       font-size: 50px;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       color:rgb(144, 144, 144);
+       
+      }
+      #home>div img{
+        width: 80%;
+        border-radius: 100%;
+        margin-top: 40px;
+       }
+       .skills-card-img{
+        padding-top: 20px;
+        width:65%;
+        border-radius: 10px;
+       }
+
+       #about-me{
+        padding-left: 35%;
+        font-family: sans-serif;
+        color: rgb(148, 145, 145);
+        font-size: 45px;
+        font-weight: lighter;
+       }
+
+       #about{
+        border: 1px solid rgb(124, 123, 123);
+        height:690px;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+       }
+     
+       #contact{
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+       justify-content: space-around;
+            margin: auto;
+            align-items: center;
+       }
+       #contact ion-icon:hover{
+        color: rgb(70, 69, 69);
+        cursor: pointer;
+        }
+ 
+       #skill-head{
+        padding-top: 50px;
+        padding-left: 29%;
+        font-family: sans-serif;
+        color: rgb(148, 145, 145);
+        font-size: 41px;
+        font-weight: lighter;
+       }
+
+       #skills{
+        width:530px;
+        height: 280px;
+        background-color: rgb(220, 220, 183);
+        margin: auto;
+        border-radius: 17px;
+       }
+       #main-skills{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        height: 370px;
+        margin: auto;
+       }
+       .desc{
+        height:330px;
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        color: #787777;
+     }
+     
 }
 
-.desc ion-icon{
-   font-size: 25px;
-  }
+@media all and (min-width:280px) and (max-width:674px){
+  #nav-menu{
+    max-width: 100%;
+    height:240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px;
+    position: sticky;
+    z-index: 2;
+    background-color: rgb(237, 237, 209);
+    top: 0px;
+ }
 
-  #project-title{
-   padding-left: 42%;
+ #footer>div ion-icon:hover{
+   font-size: 40px;
+   padding-top: 30px;
+   color:rgb(86, 85, 85)
+}
+
+ 
+ #getintouch{
+   padding-top: 70px;
+   padding-left: 21%;
    font-family: sans-serif;
    color: rgb(148, 145, 145);
-   font-size: 45px;
+   font-size: 35px;
    font-weight: lighter;
-  }
-
-  .project-card{
-   width: 450px;
-   border: 1px solid red;
-   height:450px;
-   transform: translate(10%,0%);
-   border-radius: 15px;
-   overflow: hidden;
-  }
-  .project-card>div img{
-   width: 100%;
-   padding-top: 10px;
-   position: absolute;
-   height: 300px;
-top:0;
-left: 0;
-transition: 0.5s;
-z-index: 2;
-  }
-
-.project-card>div img:hover{
-transform: translateY(-100px);
-opacity: 0.5;
+ }
+ #footer{
+   padding-top: 160px;
+   width: 80%;
+   height: 500px;
 }
 
-.details{
-position: absolute;
-bottom: 0;
-left: 0;
-background-color: rgb(47, 47, 47);
-color: white;
-width: 100%;
-box-sizing: border-box;
-padding: 10px;
-}
-.details{
-text-align: center;
-font-size: 14px;
+#footer>div button:hover{
+ width: 150px;
+ height:40px;
+ margin-top: 30px;
+ font-size: 16px;
+ color: rgb(227, 222, 222);
+ background-color: rgb(81, 81, 74);
+ border: 1px solid gray;
 }
 
-.tech-stack{
-position: absolute;
-top:60%;
-left: 50%;
-transform: translate(-50%,-230%);
-z-index: 3;
+ 
+#project-title{
+  margin: auto;
+ padding-top: 70px;
+padding-left: 30%;
+font-family: sans-serif;
+color: rgb(148, 145, 145);
+font-size: 31px;
+font-weight: lighter;
+
+}
+#footer{
+text-align:center;
+min-width: 40%;
+font-size: 20px;
+font-family: "railway",sans-serif;
 display: flex;
-margin: 0;
-padding: 0;
+height: 170px;
+flex-direction: column;
+margin: auto;
+text-align: center;
+justify-content: space-around;
+}
+
+ #projects{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   margin: auto;
+   margin-top: 40px;
+   width: 80%;
+   gap: 50px;
+ }
+
+ #nav-menu>div{
+  height: 200px;
+display: flex;
+flex-direction: column;
+ }
+ #nav-menu>div:nth-child(1){
+  width: 300px;
+  height: 50px;
+ }
+ 
+ #nav-menu p{
+    color: rgb(174, 172, 172);
+   font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 100px;
+ }
+
+ #home{
+    display: flex;
+    margin-left:30px;
+    margin-top:120px;
+  
+    min-width:100%;
+    height: 400px;
+    justify-content: space-evenly;
+ flex-direction: column;
+   }
+
+ #home>div span{
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(144, 144, 144);
+    
+   }
+   #home>div img{
+     width: 80%;
+     border-radius: 100%;
+     margin-top: 40px;
+    }
+    .skills-card-img{
+     padding-top: 20px;
+     width:65%;
+     border-radius: 10px;
+    }
+
+    #about-me{
+      padding-top: 180px;
+     padding-left: 25%;
+     font-family: sans-serif;
+     color: rgb(148, 145, 145);
+     font-size: 35px;
+     font-weight: lighter;
+    }
+
+    #about{
+     border: 1px solid rgb(124, 123, 123);
+     height:890px;
+     width: 80%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+    }
+
+    .about h2{
+      color: rgb(150, 150, 150);
+      font-family: sans-serif;
+      font-weight: lighter;
+     }
+     #about span{
+      font-size: 35px;
+      color: rgb(133, 131, 131);
+     }
+     #about p{
+      font-size: 13px;
+      font-family: sans-serif;
+      font-weight:lighter;
+      color: rgb(151, 151, 151);
+     }
+   
+     #about h3{
+      font-size: 20px;
+      color: gray;
+      font-weight: lighter;
+     }
+
+     #about img{
+      width: 80%;
+      height:97%;
+      border-radius: 100%;
+      padding-left: 10px;
+      
+     }
+   
+  
+    #contact{
+     display: flex;
+     flex-direction: column;
+     font-size: 35px;
+    justify-content: space-around;
+         margin: auto;
+         align-items: center;
+    }
+    #contact ion-icon:hover{
+     color: rgb(70, 69, 69);
+     cursor: pointer;
+     }
+
+    #skill-head{
+     padding-top: 50px;
+     padding-left: 33%;
+     font-family: sans-serif;
+     color: rgb(148, 145, 145);
+     font-size: 41px;
+     font-weight: lighter;
+    }
+
+    #skills{
+     width:530px;
+     height: 280px;
+     background-color: rgb(220, 220, 183);
+     margin: auto;
+     border-radius: 17px;
+    }
+    #main-skills{
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     height: 870px;
+     border: 1px solid rgb(166, 164, 164);
+     margin: auto;
+    }
+    .desc{
+     height:330px;
+     font-size: 14px;
+     font-family: sans-serif;
+     font-weight: lighter;
+     color: #787777;
+  }
+  .skills-card-img{
+    padding-top: 20px;
+    width:34%;
+    border-radius: 10px;
+   }
+ 
+   .carrousel{
+    display:grid;
+    grid-auto-flow:column;
+    scroll-behavior: auto;
+    gap: 1px;
+    overflow-y: auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+   }
+   
+
+  .carrousel::-webkit-scrollbar{
+    display: none;
+   }
+  
+   .skills-card{
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+   }
+ 
+   #skills p{
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left:29px;
+    color: #7d7b7b;
+   }
+   #skills p:hover{
+    color: #4a4949;
+   }
+ 
+   .scrolling{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: sans-serif;
+    color: #7d7b7b;
+    font-size: 14px;
+    padding-left: 30px;
+   }
+  
+   .project-card{
+    width: 290px;
+    height:450px;
+    transform: translate(-8%,0%);
+    border-radius: 15px;
+    overflow: hidden;
+   }
+ 
+   .project-card>div img{
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    height: 225px;
+    border-radius: 20px;
+ left: 0;
+ transition: 0.5s;
+ z-index: 2;
+   }
+ 
+   .project-tech-stack{
+    display: flex;
+
+     gap:30px;
+     font-family: sans-serif;
+     color: rgb(223, 223, 215);
+     font-size: 12px;
+}
+  
+.project-tech-stack>div p{
+  font-size: 10px;
+  color:rgb(246, 245, 245);
+  font-weight: bolder;
+
+}
+ 
+ .project-card>div img:hover{
+ transform: translateY(-120px);
+ opacity: 0.10;
+ }
 
 }
 
-.tech-stack li{
-list-style: none;
-padding-left: 10px;
-
-}
-.tech-stack ion-icon{
-padding-left: 15px;
-padding-top: 14px;
-}
-
-.tech-stack li a{
-position: relative;
-display: block;
-width:70px;
-height: 67px;
-color: #5d616c;
-font-size: 40px;
-border-radius: 80%;
-transition: 0.5s;
-border: 1px solid gray;
-opacity: 1;
-
-}
-
-
-.tech-stack li a:hover{
-transform: rotateY(360deg);
-}
-
+ 
+  
