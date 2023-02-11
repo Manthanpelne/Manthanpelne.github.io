@@ -16,11 +16,11 @@
 <div id="nav-menu">
  <div><p>Manthan.</p></div>
  <div class="button">
-    <button>Home</button>
-    <button>About</button>
-    <button>Skills</button>
-    <button>Projects</button>
-    <button>Contact</button>
+    <button class="nav-link-home">Home</button>
+    <button class="nav-link-about">About</button>
+    <button class="nav-link-skill">Skills</button>
+    <button class="nav-link-project">Projects</button>
+    <button class="nav-link-contact">Contact</button>
  </div>
 </div>
 
@@ -28,7 +28,7 @@
    <div><p>Hi, I'm Manthan Pelne. <br><span> Full Stack <br>Web Developer.</span><br>while(!(succeed=try()))</p>
       <button id="resume-button-2">My Resume</button>
    </div>
-   <div><img class="home-img" src="img/p.png" alt=""></div>
+   <div><img class="home-img" src="img/WhatsApp Image 2023-02-11 at 15.55.44.png" alt=""></div>
 </div>
 
 <h1 id="about-me">ABOUT ME</h1>
@@ -214,6 +214,25 @@
             </div>
 </div>
 
+<div class=".react-activity-calendar">
+ <div class="calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+   </div>
+</div>
+
+<div id="statcards">
+   <div id="github-streak-stats">
+      <img src="https://github-readme-stats.vercel.app/api?username=Manthanpelne&count_private=true" alt="">
+   </div>
+   <div id="github-top-langs">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manthanpelne&theme=outrun" alt="">
+   </div>
+   <div id="github-stats-card">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Manthanpelne&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D" alt="">
+   </div>
+</div>
+
 <h1 class="nav-link-contacts" id="getintouch">Get in Touch</h1>
 <div id="footer">
 <p>Gotta new project? lets work this together <br>& make it even more exciting :)</p>
@@ -221,10 +240,30 @@
 <div id="github"><a href="https://github.com/Manthanpelne"><ion-icon name="logo-github"></ion-icon></a></div>
 <div id="linkedin"><a href="https://www.linkedin.com/in/manthan-pelne-105838221/"><ion-icon name="logo-linkedin"></ion-icon></a></div>
 <div id="phone"><a href=""><ion-icon name="call-outline"></ion-icon>7028037166</a></div>
-<div><button>My Resume</button></div>
+<div><button id="resume-button-1">My Resume</button></div>
 </div>
 
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+
 </html>
+
+<script>
+   GitHubCalendar(".calendar", "Manthanpelne");
+
+   // or enable responsive functionality:
+   GitHubCalendar(".calendar", "Manthanpelne", { responsive: true });
+
+   // Use a proxy
+   GitHubCalendar(".calendar", "Manthanpelne", {
+      proxy (username) {
+        return fetch(`https://your-proxy.com/github?user=${username}`)
+      }
+   }).then(r => r.text())
+</script>
