@@ -91,6 +91,12 @@ body{
     color: gray;
     background-color: beige;
     border: 1px solid gray;
+  
+  }
+
+  #resume-button-2 a{
+    text-decoration: none;
+    color:gray
   }
 
   #home>div button:hover{
