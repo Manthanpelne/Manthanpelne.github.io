@@ -1,5 +1,10 @@
 body{
     background-color: beige;
+    scroll-behavior: smooth;
+  }
+
+  html{
+    scroll-behavior: smooth;
   }
 
   #nav-menu{
@@ -18,8 +23,14 @@ body{
      width: 50%;
   }
 
+
+  #statistics{
+    margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  }
   
- 
+
   #nav-menu p{
      color: rgb(174, 172, 172);
     font-family: sans-serif;
@@ -43,6 +54,10 @@ body{
    cursor: pointer;
    border-radius: 10px;
    position: relative;
+  }
+  .button button a{
+    color:rgb(84, 84, 84);
+    text-decoration: none;
   }
 
   .button button::after{
@@ -323,7 +338,7 @@ body{
  }
  .details{
  text-align: center;
- font-size: 14px;
+ font-size: 16px;
  }
  
  .tech-stack{
@@ -500,6 +515,18 @@ body{
       padding-top: 30px;
       color:rgb(86, 85, 85)
   }
+  #statistics{
+    margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+padding-left: 130px;
+height: 700px;
+  }
+
+  #github-top-langs{
+    padding-left: 60px;
+  }
+  
 
     
     #getintouch{
@@ -686,6 +713,20 @@ body{
    padding-top: 30px;
    color:rgb(86, 85, 85)
 }
+
+#statistics{
+  margin-top: 150px;
+display: flex;
+flex-direction: column;
+padding-left: 10px;
+height: 700px;
+}
+
+#statistics img{
+  width: 95%;
+}
+
+
 
  
  #getintouch{
