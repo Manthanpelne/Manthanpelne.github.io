@@ -1,4 +1,8 @@
-{
+{ "scripts": {
+  "cypress:run": "cypress run",
+  "cypress:open": "cypress open",
+  "start": ""
+},
   "dependencies": {
     "add": "^2.0.6",
     "github-calendar": "^2.3.2"
