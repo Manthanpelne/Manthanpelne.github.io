@@ -7,6 +7,202 @@ body{
     scroll-behavior: smooth;
   }
 
+  :root {
+    --color-react-activity-calendar-graph-day-bg: #dddbdb;
+    --color-react-activity-calendar-graph-day-L1-bg: #39dd34;
+    --color-react-activity-calendar-graph-day-L2-bg: #45a045;
+    --color-react-activity-calendar-graph-day-L3-bg: #047526;
+    --color-react-activity-calendar-graph-day-L4-bg: #0a4208;
+  }
+  
+  rect.Contributionreact-activity-calendar-day[data-level='0'] {
+      fill: var(--color-react-activity-calendar-graph-day-bg);
+  }
+  
+  rect.Contributionreact-activity-calendar-day[data-level='1'] {
+      fill: var(--color-react-activity-calendar-graph-day-L1-bg);
+  }
+  
+  rect.Contributionreact-activity-calendar-day[data-level='2'] {
+      fill: var(--color-react-activity-calendar-graph-day-L2-bg);
+  }
+  
+  rect.Contributionreact-activity-calendar-day[data-level='3'] {
+      fill: var(--color-react-activity-calendar-graph-day-L3-bg);
+  }
+  
+  rect.Contributionreact-activity-calendar-day[data-level='4'] {
+      fill: var(--color-react-activity-calendar-graph-day-L4-bg);
+  }
+  
+  .react-activity-calendar .width-full > .float-left {
+      display: none;
+  }
+  
+  .react-activity-calendar {
+      font-family: Helvetica, arial;
+      border: 1px solid #DDDDDD;
+      border-radius: 3px;
+      min-height: 243px;
+      text-align: center;
+      margin:auto;
+      margin-top: 150px;
+  }
+  
+  .react-activity-calendar-graph text.wday,
+  .react-activity-calendar-graph text.month {
+      font-size: 10px;
+      fill: #aaa;
+  }
+  
+  .contrib-legend {
+      text-align: right;
+      padding: 0 14px 10px 0;
+      display: inline-block;
+      float: right;
+  }
+  
+  .contrib-legend .legend {
+      display: inline-block;
+      list-style: none;
+      margin: 0 5px;
+      position: relative;
+      bottom: -1px;
+      padding: 0;
+  }
+  
+  .contrib-legend .legend li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+  }
+  
+  .text-small {
+      font-size: 12px;
+      color: #767676;
+  }
+  
+  .react-activity-calendar-graph {
+      padding: 5px 0 0;
+      text-align: center;
+  }
+  
+  .contrib-column {
+      padding: 15px 0;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      font-size: 11px;
+  }
+  
+  .contrib-column-first {
+      border-left: 0;
+  }
+  
+  .table-column {
+      display: table-cell;
+      width: 1%;
+      padding-right: 10px;
+      padding-left: 10px;
+      vertical-align: top;
+  }
+  
+  .contrib-number {
+      font-weight: 300;
+      line-height: 1.3em;
+      font-size: 24px;
+      display: block;
+      color: #333;
+  }
+  
+  .react-activity-calendar img.spinner {
+      width: 70px;
+      margin-top: 50px;
+      min-height: 70px;
+  }
+  
+  .monospace {
+      text-align: center;
+      color: #000;
+      font-family: monospace;
+  }
+  
+  .monospace a {
+      color: #1D75AB;
+      text-decoration: none;
+  }
+  
+  .contrib-footer {
+      font-size: 11px;
+      padding: 0 10px 12px;
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+      height: 26px;
+  }
+  
+  .left.text-muted {
+      float: left;
+      margin-left: 9px;
+      color: #767676;
+  }
+  .left.text-muted a {
+      color: #4078c0;
+      text-decoration: none;
+  }
+  .left.text-muted a:hover,
+  .monospace a:hover {
+      text-decoration: underline;
+  }
+  
+  h2.f4.text-normal.mb-3 {
+      display: none;
+  }
+  
+  .float-left.text-gray {
+      float: left;
+  }
+  #user-activity-overview{
+      display:none;
+  }
+  
+  .day-tooltip {
+      white-space: nowrap;
+      position: absolute;
+      z-index: 99999;
+      padding: 10px;
+      font-size: 12px;
+      color: #959da5;
+      text-align: center;
+      background: rgba(0,0,0,.85);
+      border-radius: 3px;
+      display: none;
+      pointer-events: none;
+  }
+  .day-tooltip strong {
+      color: #dfe2e5;
+  }
+  .day-tooltip.is-visible {
+      display: block;
+  }
+  .day-tooltip:after {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      box-sizing: border-box;
+      margin: 0 0 0 -5px;
+      content: " ";
+      border: 5px solid transparent;
+      border-top-color: rgba(0,0,0,.85)
+  }
+  
+  text.Contributionreact-activity-calendar-label {
+      fill: #ccc;
+      font-size: 11px;
+  }
+
   #nav-menu{
      max-width: 100%;
      height:80px;
@@ -141,6 +337,7 @@ body{
    
   }
   #about-me{
+    margin-top: 150px;
     padding-left: 42%;
     font-family: sans-serif;
     color: rgb(148, 145, 145);
@@ -170,7 +367,7 @@ body{
     font-weight: lighter;
    }
  
-   #contact{
+   #contact-2{
     display: flex;
     padding-top: 40px;
     font-size: 35px;
@@ -178,15 +375,16 @@ body{
         margin: auto;
         align-items: center;
    }
-   #contact ion-icon{
+   #contact-2 ion-icon{
    color: gray;
    cursor: pointer;
    }
  
-   #contact ion-icon:hover{
+   #contact-2 ion-icon:hover{
     color: rgb(70, 69, 69);
     cursor: pointer;
     }
+
  
    #skills{
     width:530px;
@@ -425,7 +623,7 @@ body{
      border: 1px solid gray;
  }
  
- #footer{
+ #contact{
      width: 60%;
      height: 300px;
  }
@@ -439,42 +637,51 @@ body{
      font-weight: lighter;
  }
  
- #footer{
+ #contact{
  text-align:center;
  min-width: 40%;
  font-size: 20px;
  font-family: "railway",sans-serif;
- display: flex;
+
  height: 170px;
  margin: auto;
  text-align: center;
- justify-content: space-around;
+
+ }
+ #contact>div{
+  padding: 10px;
  }
  
- #footer p{
+ #contact p{
      color:rgb(139, 139, 140)
  }
  
- #footer>div ion-icon{
+ #contact>div ion-icon{
      font-size: 40px;
-     padding-top: 30px;
+     padding-top: 20px;
      color:gray
- }
- 
- #footer a{
-     color: gray;
-     text-decoration: none;
-     font-size: 12px;
  }
 
  
- #footer>div ion-icon:hover{
+ #contact a{
+     color: gray;
+     text-decoration: none;
+     font-size: 16px;
+ }
+
+ #contact>div span{
+  color: gray;
+  padding-left: 20px;
+ }
+
+ 
+ #contact>div ion-icon:hover{
   font-size: 40px;
   padding-top: 30px;
   color:rgb(86, 85, 85)
 }
  
- #footer>div button{
+ #contact>div button{
      width: 150px;
      height:40px;
      margin-top: 30px;
@@ -484,7 +691,7 @@ body{
      border: 1px solid gray;
  }
  
- #footer>div button:hover{
+ #contact>div button:hover{
   width: 150px;
   height:40px;
   margin-top: 30px;
@@ -510,7 +717,7 @@ body{
        top: 0px;
     }
 
-    #footer>div ion-icon:hover{
+    #contact>div ion-icon:hover{
       font-size: 40px;
       padding-top: 30px;
       color:rgb(86, 85, 85)
@@ -530,14 +737,14 @@ height: 700px;
 
     
     #getintouch{
-      padding-top: 130px;
+      margin-top: 80px;
       padding-left: 27%;
       font-family: sans-serif;
       color: rgb(148, 145, 145);
       font-size: 55px;
       font-weight: lighter;
     }
-    #footer{
+    #contact{
       padding-top: 110px;
       width: 60%;
       height: 400px;
@@ -549,7 +756,7 @@ height: 700px;
     height: 60px;
    }
  
-  #footer>div button:hover{
+  #contact>div button:hover{
     width: 150px;
     height:40px;
     margin-top: 30px;
@@ -569,7 +776,7 @@ height: 700px;
  font-weight: lighter;
 
 }
-#footer{
+#contact{
   text-align:center;
   min-width: 40%;
   font-size: 20px;
@@ -646,7 +853,7 @@ height: 700px;
         padding: 20px;
        }
      
-       #contact{
+       #contact-2{
         display: flex;
         flex-direction: column;
         font-size: 35px;
@@ -654,7 +861,7 @@ height: 700px;
             margin: auto;
             align-items: center;
        }
-       #contact ion-icon:hover{
+       #contact-2 ion-icon:hover{
         color: rgb(70, 69, 69);
         cursor: pointer;
         }
@@ -708,7 +915,7 @@ height: 700px;
     top: 0px;
  }
 
- #footer>div ion-icon:hover{
+ #contact>div ion-icon:hover{
    font-size: 40px;
    padding-top: 30px;
    color:rgb(86, 85, 85)
@@ -737,7 +944,7 @@ height: 700px;
    font-size: 35px;
    font-weight: lighter;
  }
- #footer{
+ #contact{
    padding-top: 160px;
    width: 80%;
    height: 500px;
@@ -764,7 +971,7 @@ font-size: 31px;
 font-weight: lighter;
 
 }
-#footer{
+#contact{
 text-align:center;
 min-width: 40%;
 font-size: 20px;
@@ -884,7 +1091,7 @@ flex-direction: column;
      }
    
   
-    #contact{
+    #contact-2{
      display: flex;
      flex-direction: column;
      font-size: 35px;
@@ -892,7 +1099,7 @@ flex-direction: column;
          margin: auto;
          align-items: center;
     }
-    #contact ion-icon:hover{
+    #contact-2 ion-icon:hover{
      color: rgb(70, 69, 69);
      cursor: pointer;
      }

@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "github-calendar": "^2.3.2"
+    "add": "^2.0.6",
+    "github-calendar": "^2.3.2",
+    "react-github-calendar": "^3.4.0",
+    "yarn": "^1.22.19"
   }
 }
