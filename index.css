@@ -487,7 +487,7 @@ body{
      gap: 50px;
    }
  
-   #project-title{
+   #pro-title{
        padding-top: 70px;
     padding-left: 36%;
     font-family: sans-serif;
@@ -570,7 +570,7 @@ body{
  
  }
  
- .project-title h2{
+ .pro-title h2{
      font-family: "railway",sans-serif;
      font-weight: lighter;
      color:white;
@@ -766,7 +766,7 @@ height: 700px;
 }
 
     
-   #project-title{
+   #pro-title{
     padding-top: 40px;
  padding-left: 20%;
  font-family: sans-serif;
@@ -960,7 +960,7 @@ height: 700px;
 }
 
  
-#project-title{
+#pro-title{
   margin: auto;
  padding-top: 70px;
 padding-left: 30%;
