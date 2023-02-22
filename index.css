@@ -393,7 +393,7 @@ body{
     margin: auto;
     border-radius: 17px;
    }
-   #skills{
+   #skills-one{
     padding-top: 100px;
     padding-left: 45%;
     font-family: sans-serif;
@@ -876,7 +876,7 @@ height: 700px;
         cursor: pointer;
         }
  
-       #skill{
+       #skills-one{
         padding-top: 50px;
         padding-left: 29%;
         font-family: sans-serif;
@@ -1125,7 +1125,7 @@ flex-direction: column;
      cursor: pointer;
      }
 
-    #skills{
+    #skills-one{
      padding-top: 50px;
      padding-left: 33%;
      font-family: sans-serif;
