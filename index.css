@@ -238,25 +238,30 @@ body{
    display: flex;
    justify-content: space-evenly;
    height: 40px;
+   
   }
 
 
-  .button button{
+  .button a{
    width: 90px;
+   padding-top: 10px;
+   font-family: sans-serif;
    border: none;
    background-color: rgb(72, 59, 78);
    font-size: 14px;
    color:rgb(95, 95, 86);
    cursor: pointer;
+   text-align: center;
+   align-items: center;
    border-radius: 10px;
    position: relative;
   }
-  .button button a{
+  .button  a{
     color:rgb(217, 212, 212);
     text-decoration: none;
   }
 
-  .button button::after{
+  .button a::after{
    content: '';
    width: 0;
    height: 4px;
@@ -267,7 +272,7 @@ body{
    transition: 0.5s;
   }
 
-  .button button:hover::after{
+  .button a:hover::after{
    width: 100%;
   }
 
@@ -336,7 +341,7 @@ body{
    padding-left: 10px;
    
   }
-  #about{
+  #about-one{
     margin-top: 150px;
     padding-left: 42%;
     font-family: sans-serif;
@@ -488,8 +493,8 @@ body{
      gap: 50px;
    }
  
-   #projects{
-       padding-top: 70px;
+   #projects-one{
+       padding-top: 100px;
     padding-left: 36%;
     font-family: sans-serif;
     color: rgb(148, 145, 145);
@@ -571,7 +576,7 @@ body{
  
  }
  
- .projects h2{
+ .projects-one h2{
      font-family: "railway",sans-serif;
      font-weight: lighter;
      color:white;
@@ -777,7 +782,7 @@ height: 700px;
 }
 
     
-   #projects{
+   #projects-one{
     padding-top: 40px;
  padding-left: 20%;
  font-family: sans-serif;
@@ -844,7 +849,7 @@ height: 700px;
         border-radius: 10px;
        }
 
-       #about{
+       #about-one{
         padding-left: 35%;
         font-family: sans-serif;
         color: rgb(148, 145, 145);
@@ -921,7 +926,7 @@ height: 700px;
     padding: 20px;
     position: sticky;
     z-index: 2;
-    background-color: rgb(237, 237, 209);
+    background-color: rgb(119, 119, 114);
     top: 0px;
  }
 
@@ -982,7 +987,7 @@ height: 700px;
 }
 
  
-#projects{
+#projects-one{
   margin: auto;
  padding-top: 70px;
 padding-left: 30%;
@@ -1060,7 +1065,7 @@ flex-direction: column;
      border-radius: 10px;
     }
 
-    #about{
+    #about-one{
       padding-top: 180px;
      padding-left: 25%;
      font-family: sans-serif;
@@ -1137,7 +1142,7 @@ flex-direction: column;
     #skill-head{
      width:530px;
      height: 280px;
-     background-color: rgb(220, 220, 183);
+     background-color: rgb(102, 88, 102);
      margin: auto;
      border-radius: 17px;
     }
