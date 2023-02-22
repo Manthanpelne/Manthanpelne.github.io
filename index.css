@@ -1,5 +1,5 @@
 body{
-    background-color: beige;
+    background-color: rgb(60, 36, 68);
   }
 
   html{
@@ -46,6 +46,7 @@ body{
       text-align: center;
       margin:auto;
       margin-top: 150px;
+      background-color: rgb(139, 136, 136);
   }
   
   .react-activity-calendar-graph text.wday,
@@ -78,7 +79,7 @@ body{
   
   .text-small {
       font-size: 12px;
-      color: #767676;
+      color: white;
   }
   
   .react-activity-calendar-graph {
@@ -111,7 +112,7 @@ body{
       line-height: 1.3em;
       font-size: 24px;
       display: block;
-      color: #333;
+      color: white;
   }
   
   .react-activity-calendar img.spinner {
@@ -122,7 +123,7 @@ body{
   
   .monospace {
       text-align: center;
-      color: #000;
+      color: white;
       font-family: monospace;
   }
   
@@ -143,7 +144,7 @@ body{
   .left.text-muted {
       float: left;
       margin-left: 9px;
-      color: #767676;
+      color: white;
   }
   .left.text-muted a {
       color: #4078c0;
@@ -211,7 +212,7 @@ body{
      margin: auto;
      position: sticky;
      z-index: 2;
-     background-color: rgb(237, 237, 209);
+     background-color: rgb(119, 119, 114);
      top: 0px;
   }
   #nav-menu>div{
@@ -243,7 +244,7 @@ body{
   .button button{
    width: 90px;
    border: none;
-   background-color:rgb(219, 219, 196);
+   background-color: rgb(72, 59, 78);
    font-size: 14px;
    color:rgb(95, 95, 86);
    cursor: pointer;
@@ -251,7 +252,7 @@ body{
    position: relative;
   }
   .button button a{
-    color:rgb(84, 84, 84);
+    color:rgb(217, 212, 212);
     text-decoration: none;
   }
 
@@ -259,7 +260,7 @@ body{
    content: '';
    width: 0;
    height: 4px;
-   background: rgb(137, 137, 108);
+   background:rgb(206, 205, 204);
    position:absolute;
    left: 0;
    bottom: -6px;
@@ -299,21 +300,21 @@ body{
     margin-top: 20px;
     font-size: 16px;
     color: gray;
-    background-color: beige;
+    background-color: rgb(192, 180, 180);
     border: 1px solid gray;
   
   }
 
   #resume-button-2 a{
     text-decoration: none;
-    color:gray
+    color:rgb(68, 63, 63);
   }
 
   #home>div button:hover{
-    background-color: rgb(198, 198, 170);
+    background-color: rgb(199, 196, 196);
     cursor: pointer;
   }
-  #about{
+  #about-me{
    border: 1px solid rgb(124, 123, 123);
    height:450px;
    width: 80%;
@@ -325,17 +326,17 @@ body{
   }
 
 
-  #about>div{
+  #about-me>div{
    width: 50%;
   }
-  #about img{
+  #about-me img{
    width: 70%;
    height:83%;
    border-radius: 100%;
    padding-left: 10px;
    
   }
-  #about-me{
+  #about{
     margin-top: 150px;
     padding-left: 42%;
     font-family: sans-serif;
@@ -344,23 +345,23 @@ body{
     font-weight: lighter;
    }
 
-   .about h2{
+   #about-me h2{
     color: rgb(150, 150, 150);
     font-family: sans-serif;
     font-weight: lighter;
    }
-   #about span{
+   #about-me span{
     font-size: 49px;
     color: rgb(133, 131, 131);
    }
-   #about p{
+   #about-me p{
     font-size: 17px;
     font-family: sans-serif;
     font-weight:lighter;
     color: rgb(151, 151, 151);
    }
  
-   #about h3{
+   #about-me h3{
     font-size: 20px;
     color: gray;
     font-weight: lighter;
@@ -385,15 +386,15 @@ body{
     }
 
  
-   #skills{
+   #skill-head{
     width:530px;
     height: 280px;
-    background-color: rgb(220, 220, 183);
+    background-color: rgb(102, 88, 102);
     margin: auto;
     border-radius: 17px;
    }
-   #skill-head{
-    padding-top: 70px;
+   #skills{
+    padding-top: 100px;
     padding-left: 45%;
     font-family: sans-serif;
     color: rgb(148, 145, 145);
@@ -432,13 +433,13 @@ body{
     justify-content: center;
    }
  
-   #skills p{
+   #skill-head p{
     font-size: 20px;
     font-family: sans-serif;
     padding-left:65px;
     color: #7d7b7b;
    }
-   #skills p:hover{
+   #skills-head p:hover{
     color: #4a4949;
    }
  
@@ -478,7 +479,7 @@ body{
  .desc ion-icon{
     font-size: 25px;
    }
-   #projects{
+   #pro-title{
      display: grid;
      grid-template-columns: repeat(2,1fr);
      margin: auto;
@@ -487,7 +488,7 @@ body{
      gap: 50px;
    }
  
-   #pro-title{
+   #projects{
        padding-top: 70px;
     padding-left: 36%;
     font-family: sans-serif;
@@ -527,7 +528,7 @@ body{
  position: absolute;
  bottom: 0;
  left: 0;
- background-color: rgb(157, 157, 133);
+ background-color: rgb(102, 88, 102);
  color: rgb(235, 235, 230);
  width: 100%;
  box-sizing: border-box;
@@ -562,7 +563,7 @@ body{
  display: block;
  width:70px;
  height: 67px;
- color: #494a4d;
+ color: #161719;
  font-size: 40px;
  border-radius: 80%;
  transition: 0.5s;
@@ -570,7 +571,7 @@ body{
  
  }
  
- .pro-title h2{
+ .projects h2{
      font-family: "railway",sans-serif;
      font-weight: lighter;
      color:white;
@@ -629,7 +630,7 @@ body{
  
  #getintouch{
      padding-top: 130px;
-     padding-left: 39%;
+     padding-left: 40%;
      font-family: sans-serif;
      color: rgb(148, 145, 145);
      font-size: 55px;
@@ -637,33 +638,42 @@ body{
  }
  
  #contact{
- text-align:center;
- min-width: 40%;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap:20px;
+ min-width: 70%;
  font-size: 20px;
  font-family: "railway",sans-serif;
 
- height: 170px;
+ height: auto;
  margin: auto;
  text-align: center;
 
  }
  #contact>div{
-  padding: 10px;
+  width: 100%;
+  height: auto;
  }
+
+ #contact>div:nth-child(5){
+  padding-top: 23px;
+ }
+
+
  
  #contact p{
      color:rgb(139, 139, 140)
  }
  
  #contact>div ion-icon{
-     font-size: 40px;
-     padding-top: 20px;
+     font-size: 36px;
      color:gray
  }
 
  
  #contact a{
      color: gray;
+
      text-decoration: none;
      font-size: 16px;
  }
@@ -676,7 +686,7 @@ body{
  
  #contact>div ion-icon:hover{
   font-size: 40px;
-  padding-top: 30px;
+  padding-top: 10px;
   color:rgb(86, 85, 85)
 }
  
@@ -685,8 +695,7 @@ body{
      height:40px;
      margin-top: 30px;
      font-size: 16px;
-     color: gray;
-     background-color: beige;
+     background-color: rgb(70, 66, 66);
      border: 1px solid gray;
  }
  
@@ -695,8 +704,8 @@ body{
   height:40px;
   margin-top: 30px;
   font-size: 16px;
-  color: rgb(227, 222, 222);
-  background-color: rgb(81, 81, 74);
+  color: white;
+  background-color: rgb(47, 47, 45);
   border: 1px solid gray;
 }
 
@@ -712,7 +721,7 @@ body{
        flex-direction: column;
        position: sticky;
        z-index: 2;
-       background-color: rgb(237, 237, 209);
+       background-color: rgb(121, 121, 118);
        top: 0px;
     }
 
@@ -744,6 +753,8 @@ height: 700px;
       font-weight: lighter;
     }
     #contact{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
       padding-top: 110px;
       width: 60%;
       height: 400px;
@@ -760,13 +771,13 @@ height: 700px;
     height:40px;
     margin-top: 30px;
     font-size: 16px;
-    color: rgb(227, 222, 222);
-    background-color: rgb(81, 81, 74);
+    color: rgb(24, 20, 20);
+    background-color: rgb(221, 221, 211);
     border: 1px solid gray;
 }
 
     
-   #pro-title{
+   #projects{
     padding-top: 40px;
  padding-left: 20%;
  font-family: sans-serif;
@@ -788,7 +799,7 @@ height: 700px;
   justify-content: space-around;
   }
 
-    #projects{
+    #pro-title{
       display: grid;
       grid-template-columns: repeat(1,1fr);
       margin: auto;
@@ -833,7 +844,7 @@ height: 700px;
         border-radius: 10px;
        }
 
-       #about-me{
+       #about{
         padding-left: 35%;
         font-family: sans-serif;
         color: rgb(148, 145, 145);
@@ -841,7 +852,7 @@ height: 700px;
         font-weight: lighter;
        }
 
-       #about{
+       #about-me{
         border: 1px solid rgb(124, 123, 123);
         height:690px;
         width: 80%;
@@ -865,7 +876,7 @@ height: 700px;
         cursor: pointer;
         }
  
-       #skill-head{
+       #skill{
         padding-top: 50px;
         padding-left: 29%;
         font-family: sans-serif;
@@ -874,10 +885,10 @@ height: 700px;
         font-weight: lighter;
        }
 
-       #skills{
+       #skill-head{
         width:530px;
         height: 280px;
-        background-color: rgb(220, 220, 183);
+        background-color: rgb(102, 88, 102);
         margin: auto;
         border-radius: 17px;
        }
@@ -913,6 +924,17 @@ height: 700px;
     background-color: rgb(237, 237, 209);
     top: 0px;
  }
+
+ .react-activity-calendar {
+  font-family: Helvetica, arial;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  min-width: 100px;
+  min-height: 243px;
+  text-align: center;
+  margin:auto;
+  margin-top: 150px;
+}
 
  #contact>div ion-icon:hover{
    font-size: 40px;
@@ -960,7 +982,7 @@ height: 700px;
 }
 
  
-#pro-title{
+#projects{
   margin: auto;
  padding-top: 70px;
 padding-left: 30%;
@@ -973,7 +995,7 @@ font-weight: lighter;
 #contact{
 text-align:center;
 min-width: 40%;
-font-size: 20px;
+font-size: 15px;
 font-family: "railway",sans-serif;
 display: flex;
 height: 170px;
@@ -983,7 +1005,7 @@ text-align: center;
 justify-content: space-around;
 }
 
- #projects{
+ #pro-title{
    display: grid;
    grid-template-columns: repeat(1,1fr);
    margin: auto;
@@ -1038,7 +1060,7 @@ flex-direction: column;
      border-radius: 10px;
     }
 
-    #about-me{
+    #about{
       padding-top: 180px;
      padding-left: 25%;
      font-family: sans-serif;
@@ -1047,7 +1069,7 @@ flex-direction: column;
      font-weight: lighter;
     }
 
-    #about{
+    #about-me{
      border: 1px solid rgb(124, 123, 123);
      height:890px;
      width: 80%;
@@ -1059,29 +1081,29 @@ flex-direction: column;
      padding: 20px;
     }
 
-    .about h2{
+    #about-me h2{
       color: rgb(150, 150, 150);
       font-family: sans-serif;
       font-weight: lighter;
      }
-     #about span{
+     #about-me span{
       font-size: 35px;
       color: rgb(133, 131, 131);
      }
-     #about p{
+     #about-me p{
       font-size: 13px;
       font-family: sans-serif;
       font-weight:lighter;
       color: rgb(151, 151, 151);
      }
    
-     #about h3{
+     #about-me h3{
       font-size: 20px;
       color: gray;
       font-weight: lighter;
      }
 
-     #about img{
+     #about-me img{
       width: 80%;
       height:97%;
       border-radius: 100%;
@@ -1103,7 +1125,7 @@ flex-direction: column;
      cursor: pointer;
      }
 
-    #skill-head{
+    #skills{
      padding-top: 50px;
      padding-left: 33%;
      font-family: sans-serif;
@@ -1112,7 +1134,7 @@ flex-direction: column;
      font-weight: lighter;
     }
 
-    #skills{
+    #skill-head{
      width:530px;
      height: 280px;
      background-color: rgb(220, 220, 183);
@@ -1166,13 +1188,13 @@ flex-direction: column;
     justify-content: center;
    }
  
-   #skills p{
+   #skill-head p{
     font-size: 15px;
     font-family: sans-serif;
     padding-left:29px;
     color: #7d7b7b;
    }
-   #skills p:hover{
+   #skills-head p:hover{
     color: #4a4949;
    }
  
