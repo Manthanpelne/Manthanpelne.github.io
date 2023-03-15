@@ -1,10 +1,24 @@
 body{
-    background-color: rgb(60, 36, 68);
+    background-color: rgb(54, 68, 59);
   }
 
   html{
     scroll-behavior: smooth;
   }
+
+  .ml12 {
+  font-weight: 30;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: rgb(210, 208, 208);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
 
   :root {
     --color-react-activity-calendar-graph-day-bg: #dddbdb;
@@ -212,7 +226,7 @@ body{
      margin: auto;
      position: sticky;
      z-index: 2;
-     background-color: rgb(119, 119, 114);
+     background-color: rgb(54, 68, 59);
      top: 0px;
   }
   #nav-menu>div{
@@ -228,11 +242,12 @@ body{
   
 
   #nav-menu p{
-     color: rgb(174, 172, 172);
+     color: rgb(214, 212, 212);
     font-family: sans-serif;
      font-size: 20px;
      font-weight: bolder;
      padding-left: 20px;
+     letter-spacing: 0.1em;
   }
   .button{
    display: flex;
@@ -246,10 +261,11 @@ body{
    width: 90px;
    padding-top: 10px;
    font-family: sans-serif;
+   text-transform: uppercase;
    border: none;
-   background-color: rgb(72, 59, 78);
+   background-color: rgb(54, 68, 59);
    font-size: 14px;
-   color:rgb(95, 95, 86);
+   color: rgb(215, 215, 215);
    cursor: pointer;
    text-align: center;
    align-items: center;
@@ -282,17 +298,19 @@ body{
    min-width:100%;
    height: 500px;
    justify-content: space-evenly;
+   color: rgb(240, 239, 239);
 
   }
   #home p{
-   color:  rgb(160, 160, 141);
+    color: rgb(181, 180, 180);
    padding-top:10px;
      font-size:20px;
   }
-  #home>div span{
+  .span{
    font-size: 80px;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color:rgb(144, 144, 144);
+   color: rgb(181, 180, 180);
+   letter-spacing: 0.08em;
    font-weight: bolder;
   }
   #home>div img{
@@ -304,15 +322,14 @@ body{
     height:40px;
     margin-top: 20px;
     font-size: 16px;
-    color: gray;
+    color: rgb(98, 91, 91);
     background-color: rgb(192, 180, 180);
     border: 1px solid gray;
-  
   }
 
   #resume-button-2 a{
     text-decoration: none;
-    color:rgb(68, 63, 63);
+    color:rgb(25, 21, 21);
   }
 
   #home>div button:hover{
@@ -345,30 +362,31 @@ body{
     margin-top: 150px;
     padding-left: 42%;
     font-family: sans-serif;
-    color: rgb(148, 145, 145);
+    color: rgb(181, 180, 180);
     font-size: 45px;
     font-weight: lighter;
    }
 
    #about-me h2{
-    color: rgb(150, 150, 150);
+    color: rgb(181, 180, 180);
     font-family: sans-serif;
     font-weight: lighter;
    }
    #about-me span{
     font-size: 49px;
-    color: rgb(133, 131, 131);
+    color: rgb(181, 180, 180);
    }
    #about-me p{
-    font-size: 17px;
+    font-size: 19px;
     font-family: sans-serif;
     font-weight:lighter;
-    color: rgb(151, 151, 151);
+    letter-spacing: 0.02em;
+    color: rgb(181, 180, 180);
    }
  
    #about-me h3{
     font-size: 20px;
-    color: gray;
+    color: rgb(181, 180, 180);
     font-weight: lighter;
    }
  
@@ -381,7 +399,7 @@ body{
         align-items: center;
    }
    #contact-2 ion-icon{
-   color: gray;
+    color: rgb(181, 180, 180);
    cursor: pointer;
    }
  
@@ -394,7 +412,7 @@ body{
    #skill-head{
     width:530px;
     height: 280px;
-    background-color: rgb(102, 88, 102);
+    background-color: rgb(69, 85, 77);
     margin: auto;
     border-radius: 17px;
    }
@@ -402,7 +420,7 @@ body{
     padding-top: 100px;
     padding-left: 45%;
     font-family: sans-serif;
-    color: rgb(148, 145, 145);
+    color: rgb(181, 180, 180);
     font-size: 45px;
     font-weight: lighter;
    }
@@ -442,7 +460,7 @@ body{
     font-size: 20px;
     font-family: sans-serif;
     padding-left:65px;
-    color: #7d7b7b;
+    color: rgb(181, 180, 180);
    }
    #skills-head p:hover{
     color: #4a4949;
@@ -452,7 +470,7 @@ body{
     font-style: italic;
     font-weight: lighter;
     font-family: sans-serif;
-    color: #7d7b7b;
+    color: rgb(181, 180, 180);
     font-size: 14px;
     padding-left: 160px;
    }
@@ -472,10 +490,10 @@ body{
  
    .desc{
     height:330px;
-    font-size: 20px;
+    font-size: 22px;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #787777;
+    color: rgb(181, 180, 180);
  }
  .desc p{
     padding-top: 20px;
@@ -490,14 +508,14 @@ body{
      margin: auto;
      margin-top: 70px;
      width: 80%;
-     gap: 50px;
+     gap: 100px;
    }
  
    #projects-one{
        padding-top: 100px;
     padding-left: 36%;
     font-family: sans-serif;
-    color: rgb(148, 145, 145);
+    color: rgb(173, 172, 172);
     font-size: 45px;
     font-weight: lighter;
    
@@ -533,7 +551,7 @@ body{
  position: absolute;
  bottom: 0;
  left: 0;
- background-color: rgb(102, 88, 102);
+ background-color: rgb(69, 85, 77);
  color: rgb(235, 235, 230);
  width: 100%;
  box-sizing: border-box;
@@ -637,7 +655,7 @@ body{
      padding-top: 130px;
      padding-left: 40%;
      font-family: sans-serif;
-     color: rgb(148, 145, 145);
+     color: rgb(181, 180, 180);
      font-size: 55px;
      font-weight: lighter;
  }
@@ -667,24 +685,24 @@ body{
 
  
  #contact p{
-     color:rgb(139, 139, 140)
+  color: rgb(181, 180, 180);
  }
  
  #contact>div ion-icon{
      font-size: 36px;
-     color:gray
+     color: rgb(181, 180, 180);
  }
 
  
  #contact a{
-     color: gray;
+  color: rgb(33, 30, 30);
 
      text-decoration: none;
      font-size: 16px;
  }
 
  #contact>div span{
-  color: gray;
+  color: rgb(181, 180, 180);
   padding-left: 20px;
  }
 
@@ -700,7 +718,7 @@ body{
      height:40px;
      margin-top: 30px;
      font-size: 16px;
-     background-color: rgb(70, 66, 66);
+     background-color: rgb(152, 148, 148);
      border: 1px solid gray;
  }
  
@@ -710,7 +728,7 @@ body{
   margin-top: 30px;
   font-size: 16px;
   color: white;
-  background-color: rgb(47, 47, 45);
+  background-color: rgb(89, 89, 85);
   border: 1px solid gray;
 }
 
@@ -726,7 +744,7 @@ body{
        flex-direction: column;
        position: sticky;
        z-index: 2;
-       background-color: rgb(121, 121, 118);
+       background-color: rgb(54, 68, 59);
        top: 0px;
     }
 
@@ -753,7 +771,7 @@ height: 700px;
       margin-top: 80px;
       padding-left: 27%;
       font-family: sans-serif;
-      color: rgb(148, 145, 145);
+      color: rgb(181, 180, 180);
       font-size: 55px;
       font-weight: lighter;
     }
@@ -786,7 +804,7 @@ height: 700px;
     padding-top: 40px;
  padding-left: 20%;
  font-family: sans-serif;
- color: rgb(148, 145, 145);
+ color: rgb(181, 180, 180);
  font-size: 45px;
  font-weight: lighter;
 
@@ -817,7 +835,7 @@ height: 700px;
        width: 100%;
     }
     #nav-menu p{
-       color: rgb(174, 172, 172);
+      color: rgb(181, 180, 180);
       font-family: sans-serif;
        font-size: 20px;
        font-weight: bolder;
@@ -835,7 +853,7 @@ height: 700px;
     #home>div span{
        font-size: 50px;
        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       color:rgb(144, 144, 144);
+       color: rgb(181, 180, 180);
        
       }
       #home>div img{
@@ -852,7 +870,7 @@ height: 700px;
        #about-one{
         padding-left: 35%;
         font-family: sans-serif;
-        color: rgb(148, 145, 145);
+        color: rgb(181, 180, 180);
         font-size: 45px;
         font-weight: lighter;
        }
@@ -885,7 +903,7 @@ height: 700px;
         padding-top: 50px;
         padding-left: 29%;
         font-family: sans-serif;
-        color: rgb(148, 145, 145);
+        color: rgb(181, 180, 180);
         font-size: 41px;
         font-weight: lighter;
        }
@@ -893,7 +911,7 @@ height: 700px;
        #skill-head{
         width:530px;
         height: 280px;
-        background-color: rgb(102, 88, 102);
+        background-color: rgb(69, 85, 77);
         margin: auto;
         border-radius: 17px;
        }
@@ -909,7 +927,7 @@ height: 700px;
         font-size: 14px;
         font-family: sans-serif;
         font-weight: lighter;
-        color: #787777;
+        color: rgb(181, 180, 180);
      }
      
 }
@@ -926,9 +944,21 @@ height: 700px;
     padding: 20px;
     position: sticky;
     z-index: 2;
-    background-color: rgb(119, 119, 114);
+    background-color: rgb(54, 68, 59);
     top: 0px;
  }
+#resume-button-2{
+  margin-left: 50px;
+}
+
+ .ml12 {
+  font-weight: 20;
+  font-size: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: rgb(210, 208, 208);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
  .react-activity-calendar {
   font-family: Helvetica, arial;
@@ -959,14 +989,12 @@ height: 700px;
   width: 95%;
 }
 
-
-
  
  #getintouch{
    padding-top: 70px;
    padding-left: 21%;
    font-family: sans-serif;
-   color: rgb(148, 145, 145);
+   color: rgb(181, 180, 180);
    font-size: 35px;
    font-weight: lighter;
  }
@@ -992,7 +1020,7 @@ height: 700px;
  padding-top: 70px;
 padding-left: 30%;
 font-family: sans-serif;
-color: rgb(148, 145, 145);
+color: rgb(181, 180, 180);
 font-size: 31px;
 font-weight: lighter;
 
@@ -1030,7 +1058,7 @@ flex-direction: column;
  }
  
  #nav-menu p{
-    color: rgb(174, 172, 172);
+  color: rgb(181, 180, 180);
    font-family: sans-serif;
     font-size: 20px;
     font-weight: bolder;
@@ -1040,7 +1068,7 @@ flex-direction: column;
  #home{
     display: flex;
     margin-left:30px;
-    margin-top:120px;
+    margin-top:80px;
   
     min-width:100%;
     height: 400px;
@@ -1049,9 +1077,9 @@ flex-direction: column;
    }
 
  #home>div span{
-    font-size: 50px;
+    font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(144, 144, 144);
+    color: rgb(181, 180, 180);
     
    }
    #home>div img{
@@ -1069,7 +1097,7 @@ flex-direction: column;
       padding-top: 180px;
      padding-left: 25%;
      font-family: sans-serif;
-     color: rgb(148, 145, 145);
+     color: rgb(181, 180, 180);
      font-size: 35px;
      font-weight: lighter;
     }
@@ -1087,24 +1115,24 @@ flex-direction: column;
     }
 
     #about-me h2{
-      color: rgb(150, 150, 150);
+      color: rgb(181, 180, 180);
       font-family: sans-serif;
       font-weight: lighter;
      }
      #about-me span{
       font-size: 35px;
-      color: rgb(133, 131, 131);
+      color: rgb(181, 180, 180);
      }
      #about-me p{
       font-size: 13px;
       font-family: sans-serif;
       font-weight:lighter;
-      color: rgb(151, 151, 151);
+      color: rgb(181, 180, 180);
      }
    
      #about-me h3{
       font-size: 20px;
-      color: gray;
+      color: rgb(181, 180, 180);
       font-weight: lighter;
      }
 
@@ -1134,7 +1162,7 @@ flex-direction: column;
      padding-top: 50px;
      padding-left: 33%;
      font-family: sans-serif;
-     color: rgb(148, 145, 145);
+     color: rgb(181, 180, 180);
      font-size: 41px;
      font-weight: lighter;
     }
@@ -1142,7 +1170,7 @@ flex-direction: column;
     #skill-head{
      width:530px;
      height: 280px;
-     background-color: rgb(102, 88, 102);
+     background-color: rgb(69, 85, 77);
      margin: auto;
      border-radius: 17px;
     }
@@ -1160,7 +1188,7 @@ flex-direction: column;
      font-size: 14px;
      font-family: sans-serif;
      font-weight: lighter;
-     color: #787777;
+     color: rgb(181, 180, 180);
   }
   .skills-card-img{
     padding-top: 20px;
@@ -1197,7 +1225,7 @@ flex-direction: column;
     font-size: 15px;
     font-family: sans-serif;
     padding-left:29px;
-    color: #7d7b7b;
+    color: rgb(181, 180, 180);
    }
    #skills-head p:hover{
     color: #4a4949;
@@ -1207,7 +1235,7 @@ flex-direction: column;
     font-style: italic;
     font-weight: lighter;
     font-family: sans-serif;
-    color: #7d7b7b;
+    color: rgb(181, 180, 180);
     font-size: 14px;
     padding-left: 30px;
    }
