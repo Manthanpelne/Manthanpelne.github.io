@@ -301,10 +301,7 @@ body{
    color: rgb(240, 239, 239);
 
   }
-  #home>div:nth-child(1){
-    border: 1px solid yellow;
-   
-  }
+ 
   #home p{
     color: rgb(181, 180, 180);
    padding-top:10px;
@@ -325,7 +322,7 @@ body{
   #resume-button-2{
     width: 150px;
     height:40px;
-   
+   margin-left: 1px;
     font-size: 16px;
     background-color: #3f5245;
     border: 1px solid gray;
