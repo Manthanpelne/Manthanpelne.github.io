@@ -301,6 +301,10 @@ body{
    color: rgb(240, 239, 239);
 
   }
+  #home>div:nth-child(1){
+    border: 1px solid yellow;
+   
+  }
   #home p{
     color: rgb(181, 180, 180);
    padding-top:10px;
@@ -317,20 +321,21 @@ body{
    width: 90%;
    border-radius: 100%;
   }
-  #home>div button{
+  
+  #resume-button-2{
     width: 150px;
     height:40px;
-    margin-top: 20px;
+   
     font-size: 16px;
-    color: rgb(98, 91, 91);
-    background-color: rgb(192, 180, 180);
+    background-color: #3f5245;
     border: 1px solid gray;
-  }
 
-  #resume-button-1 a{
-    text-decoration: none;
-    color:rgb(25, 21, 21);
-  }
+}
+#resume-button-2 a{
+ text-decoration: none;
+ color: white;
+}
+
 
   #home>div button:hover{
     background-color: rgb(199, 196, 196);
@@ -713,15 +718,7 @@ body{
   color:rgb(86, 85, 85)
 }
  
- #contact>div button{
-     width: 150px;
-     height:40px;
-     margin-top: 30px;
-     font-size: 16px;
-     background-color: rgb(152, 148, 148);
-     border: 1px solid gray;
- }
- 
+
  #contact>div button:hover{
   width: 150px;
   height:40px;
