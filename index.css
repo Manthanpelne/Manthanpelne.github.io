@@ -327,7 +327,7 @@ body{
     border: 1px solid gray;
   }
 
-  #resume-button-2 a{
+  #resume-button-1 a{
     text-decoration: none;
     color:rgb(25, 21, 21);
   }
@@ -933,6 +933,7 @@ height: 700px;
 }
 
 @media all and (min-width:280px) and (max-width:674px){
+  
   #nav-menu{
     max-width: 100%;
     height:240px;
@@ -1159,7 +1160,7 @@ flex-direction: column;
      }
 
     #skills-one{
-     padding-top: 50px;
+     
      padding-left: 33%;
      font-family: sans-serif;
      color: rgb(181, 180, 180);
@@ -1168,8 +1169,8 @@ flex-direction: column;
     }
 
     #skill-head{
-     width:530px;
-     height: 280px;
+     width:230px;
+     height: 160px;
      background-color: rgb(69, 85, 77);
      margin: auto;
      border-radius: 17px;
@@ -1192,7 +1193,7 @@ flex-direction: column;
   }
   .skills-card-img{
     padding-top: 20px;
-    width:34%;
+    width:94%;
     border-radius: 10px;
    }
  
@@ -1216,7 +1217,7 @@ flex-direction: column;
     scroll-snap-align: start;
     border-radius: 30px;
     min-height: 200px;
-    min-width: 300px;
+    min-width: 100px;
     align-items: center;
     justify-content: center;
    }
