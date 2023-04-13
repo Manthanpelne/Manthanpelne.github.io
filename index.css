@@ -277,6 +277,11 @@ body{
     text-decoration: none;
   }
 
+  #resume-button-1{
+    background-color:rgb(54, 68, 59);
+    border: none;
+  }
+
   .button a::after{
    content: '';
    width: 0;
@@ -328,6 +333,7 @@ body{
     border: 1px solid gray;
 
 }
+
 #resume-button-2 a{
  text-decoration: none;
  color: white;
@@ -335,7 +341,7 @@ body{
 
 
   #home>div button:hover{
-    background-color: rgb(199, 196, 196);
+    background-color: rgb(60, 90, 64);
     cursor: pointer;
   }
   #about-me{
@@ -663,13 +669,11 @@ body{
  }
  
  #contact{
- display: grid;
- grid-template-columns: repeat(2,1fr);
+padding-bottom: 40px;
  gap:20px;
  min-width: 70%;
  font-size: 20px;
  font-family: "railway",sans-serif;
-
  height: auto;
  margin: auto;
  text-align: center;
@@ -678,6 +682,7 @@ body{
  #contact>div{
   width: 100%;
   height: auto;
+
  }
 
  #contact>div:nth-child(5){
